@@ -27,6 +27,7 @@ jobs:
         run: dotnet build ./LoginApi.sln --configuration Release --no-restore
         
       - name: Publish
-        run: dotnet publish ./LoginApi.sln --configuration Release --no-build --output ''
+        run: dotnet publish ./LoginApi.sln --configuration Release --no-build --output ./publish
+
         
 
