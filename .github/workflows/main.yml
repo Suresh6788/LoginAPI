@@ -21,12 +21,12 @@ jobs:
           dotnet-version: '6.0.x'
           
       - name: Restore
-        run: dotnet restore ./LoginAPI.sln
+        run: dotnet restore ./LoginApi.sln
         
       - name: Build
-        run: dotnet build ./LoginAPI.sln --configuration Release --no-restore
+        run: dotnet build ./LoginApi.sln --configuration Release --no-restore
         
       - name: Publish
-        run: dotnet publish ./LoginAPI.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+        run: dotnet publish ./LoginApi.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
         
 
